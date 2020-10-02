@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Navbar from "./Components/NavBar.component";
+import ExercisesList from "./Components/ExercisesList.component";
+import EditExercise from "./Components/ExercisesEdit.component";
+import CreateExercise from "./Components/CreateExercise.component";
+import CreateUser from "./Components/CreateUser.component";
+
 function App() {
   return (
     <Router>
