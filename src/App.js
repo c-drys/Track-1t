@@ -1,8 +1,14 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from “react-router-dom”;
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <div className="container">Exercise Saves Lives!!</div>;
+  return (
+  <Router>
+   <div className="container">Exercise Saves Lives!!</div>
+   </Router>
+   )
 }
 
 export default App;
