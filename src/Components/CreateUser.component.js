@@ -10,6 +10,26 @@ export default class CreateUser extends Component {
       username: "",
     };
   }
+
+  onChangeUsername(e) {
+    this.setState({
+      username: e.target.value,
+    });
+  }
+  onSubmit(e) {
+    e.preventDefault();
+
+    const newUser = {
+      username: this.state.username,
+    };
+
+    console.log(newUser);
+
+    this.setState({
+      username: "",
+    });
+  }
+
   render() {
     return (
       <div>
