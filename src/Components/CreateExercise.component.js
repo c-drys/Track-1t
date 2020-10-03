@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default class CreateExercise extends Component {
   constructor(props) {
@@ -19,6 +21,15 @@ export default class CreateExercise extends Component {
       date: new Date(),
       users: [],
     };
+  }
+
+  // hardcode until from connection to MongoDB established to
+
+  componentDidMount() {
+    this.setState({
+      users: ["test user"],
+      username: "test user",
+    });
   }
 
   onChangeUsername(e) {
